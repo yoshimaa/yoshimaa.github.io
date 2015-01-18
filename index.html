@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>yoshimaa's GitHub page</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--menu-->
+<link href="css/mmenu.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript">
+		$(function() {
+			$('nav#menu').mmenu();
+		});
+	</script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+		  $(".scroll").click(function(event){		
+			event.preventDefault();
+		  $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+<div class="header">	
+  <div class="container"> 
+     <div id="page">
+		<div id="header_nav">
+			<a href="#menu"></a>
+		</div>
+	    <nav id="menu">
+			<ul>
+				<li class="Selected"><a href="index.html">Home</a></li>
+				<li><a href="#work" class="scroll">Work</a></li>
+			    <li><a href="#services" class="scroll">services</a></li>
+				<li><a href="#contact" class="scroll">Contact</a></li>
+			</ul>
+		</nav>
+	   </div>
+	   <h1>yoshimaa's github page</h1>
+	   <span> </span>
+	   <p>this is my github page.</p>
+	   <div class="header_arrow">
+	      <a href="#arrow" class="scroll"><span> </span></a>
+	   </div>
+</div>
+</div>
+<div class="introduct" id="arrow">
+	<div class="container">
+		<h2>Introduction</h2>
+		<span> </span>
+		<p>Im a programmer,majored in nursing in university.<br>
+		   curious about: community health care, social needs[love and belonging]</p>
+	</div>
+</div>
+<div class="create">
+	<div class="container">
+		<a href="#" class="fa-btn btn-1 btn-1e">Pure Creative (back to <font color="#bfbfbf">top</font>)</a>
+	</div>
+</div>
+<div class="work" id="work">
+	<div class="container">
+		<h2>some of my work</h2>
+		<span class="work_line"> </span>
+		<ul id="filters" class="clearfix">
+		  <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+		  <li><span class="filter" data-filter="app">Android</span></li>
+		  <li><span class="filter" data-filter="card">Web Design</span></li>
+		  <li><span class="filter" data-filter="icon">Mobile UI</span></li>
+		  <li><span class="filter" data-filter="logo">Blog</span></li>
+		  <div class="clearfix"> </div>
+		</ul>
+        <div id="portfoliolist">
+		  <div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<a href="images/p1.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p1.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                        <h3>Blog</h3>
+	                        <p>blog in english</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>				
+            <div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">				
+					<a href="images/p2.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p2.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                        <h3>Android</h3>
+	                        <p>Android App</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>		
+		    <div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">				
+					<a href="images/p3.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p3.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                         <h3>Image</h3>
+	                        <p>coming soon..</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>				
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<a href="images/p4.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p4.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                        <h3>Blog</h3>
+	                        <p>tech blog</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>	
+		    <div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">				
+					<a href="images/p5.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p5.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                         <h3>Image</h3>
+	                        <p>coming soon..</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">				
+					<a href="images/p6.jpg" class="flipLightBox">
+					  <div class="view view-first">
+	                    <img src="images/p6.jpg" class="img-responsive" alt=""/>
+	                      <div class="mask">
+	                         <h3>Image</h3>
+	                        <p>coming soon..</p>
+	                        <span> </span>
+	                      </div>
+	                  </div>
+					</a>
+				</div>
+			</div>	
+			<div class="clearfix"> </div>
+		</div>
+		<div class="work_btn">
+		   <a href="#" class="fa-btn btn1 btn-1 btn-1e">show me more</a>
+		</div>
+	</div><!-- container -->
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script type="text/javascript">$('body').flipLightBox()</script>
+	</div>
+   </div>
+  </div>
+  
+<div class="about" id="services">
+	<div class="container">
+		<h3>about app</h3>
+		<span> </span>
+		<p></p>
+	    <div class="grid_2 text-center">
+	    	<div class="col-md-4 box1">
+	    		<img src="images/iphone.png" class="img-responsive" alt=""/>
+	    		<h4>App Design</h4>
+	    		<p></p>
+	    	</div>
+	    	<div class="col-md-4 box1">
+	    		<img src="images/ipad.png" class="img-responsive" alt=""/>
+	    		<h4>App Design</h4>
+	    		<p></p>
+	    	</div>
+	    	<div class="col-md-4 box1">
+	    		<img src="images/mac.png" class="img-responsive" alt=""/>
+	    		<h4>App Design</h4>
+	    		<p></p>
+	    	</div>
+	    	<div class="clearfix"> </div>
+	    </div>
+	</div>
+</div>
+<div class="quote">
+	<div class="container">
+		<a href="#" class="fa-btn btn-1 btn-1e">puRe creativity (back to top)</a>
+	</div>
+</div>
+<div class="touch"> 
+ <div class="container">
+ 	<h3>Get In Touch</h3>
+ 	<span> </span>
+ 	<p>sorry,out of order now</p>
+ 	
+ </div>	
+</div>
+<div class="contact" id="contact">
+    <div class="col-md-4 contact_left">
+		<p><font color="#FFFFFF">.</font></p>
+		<p><font color="#FFFFFF">.</font></p>
+		<p><font color="#FFFFFF">.</font></p>
+		<p><font color="#FFFFFF">.</font></p>
+		<p><font color="#FFFFFF">.</font></p>
+		<ul class="social">
+			<li><a href="https://twitter.com/sugizo009"> <i class="tw"> </i> </a></li>
+		    <li><a href="https://www.facebook.com/profile.php?id=100002834724954"><i class="fb"> </i> </a></li>
+			<li><a href="https://www.linkedin.com/profile/view?id=149098560&trk=nav_responsive_tab_profile_pic"><i class="linkedin"> </i> 
+			</a></li>
+			<li><a href="https://vimeo.com/user36500557"><i class="vimeo"> </i> </a></li>
+			<li><a href="https://www.behance.net/yoshimaa"><i class="behance"> </i> </a></li>
+		</ul>
+	</div> 
+	<div class="col-md-8 contact_right">
+		<form method="post" action="contact-post.html">
+					<div class="contact_left_box">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:60px">
+					    <div class="clearfix"></div> 
+					</div>
+					<div class="contact_right_box">
+	                   <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+	                </div>
+	                <div class="form_submit">
+	                	<label class="fa-btn btn2 btn-2 btn-1e"><input type="submit" value="send"></label>
+			        </div>
+					<div class="clearfix"></div>
+       </form>
+	</div> 
+	<div class="clearfix"></div>
+ </div>
+<div class="footer">
+	<div class="container">
+		<p class="copy">&copy;2015 yoshimaa <a href="http://yoshimaa.blogspot.jp/" target="_blank"> yoshi </a> </p>
+	</div>
+	<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>		
